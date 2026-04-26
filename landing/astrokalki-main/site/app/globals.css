@@ -1,0 +1,287 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Cosmic Indigo/Teal/Gold Theme - Professional & Spiritual */
+  --background: 250 15% 5%;
+  --foreground: 0 0% 96%;
+  --card: 250 10% 12%;
+  --card-foreground: 0 0% 96%;
+  --primary: 200 100% 50%;
+  --primary-foreground: 250 15% 5%;
+  --secondary: 170 70% 45%;
+  --secondary-foreground: 0 0% 100%;
+  --muted: 250 10% 30%;
+  --muted-foreground: 0 0% 70%;
+  --accent: 45 85% 55%;
+  --accent-foreground: 250 15% 5%;
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 0 0% 100%;
+  --border: 250 10% 20%;
+  --input: 250 10% 15%;
+  --ring: 200 100% 50%;
+  --radius: 0.5rem;
+
+  /* Updated cosmic color palette */
+  --ink: #0f0f23;
+  --indigo-dark: #1a1a3e;
+  --indigo-light: #2d2d5f;
+  --teal: #20b2aa;
+  --teal-light: #48dfd8;
+  --gold: #d4af37;
+  --gold-light: #f4d03f;
+  --cream: #f8f6f1;
+}
+
+html,
+body {
+  background-color: #0f0f23;
+  color: #f8f6f1;
+  font-family: "Inter", ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+}
+
+.title-tight {
+  letter-spacing: -0.02em;
+  font-family: "Cinzel", serif;
+}
+
+/* Refined glassmorphism with teal/indigo accents */
+.glass {
+  background: rgba(32, 178, 170, 0.04);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(72, 223, 216, 0.12);
+}
+
+.glass-strong {
+  background: rgba(32, 178, 170, 0.06);
+  backdrop-filter: blur(25px);
+  border: 1px solid rgba(72, 223, 216, 0.18);
+}
+
+/* Gold-teal glow effect for premium feel */
+.glow {
+  box-shadow: 0 0 0 1px rgba(212, 175, 55, 0.15), 0 4px 20px rgba(72, 223, 216, 0.12);
+}
+
+.glow-secondary {
+  box-shadow: 0 0 0 1px rgba(212, 175, 55, 0.12), 0 4px 20px rgba(212, 175, 55, 0.1);
+}
+
+/* Premium button styling with teal gradient */
+.btn {
+  @apply inline-flex items-center justify-center gap-2 rounded-lg text-sm font-medium transition-all duration-300;
+  padding: 0.875rem 1.25rem;
+  background: linear-gradient(135deg, rgba(32, 178, 170, 0.18), rgba(72, 223, 216, 0.12));
+  border: 1px solid rgba(72, 223, 216, 0.25);
+  color: #f8f6f1;
+  box-shadow: 0 4px 12px rgba(72, 223, 216, 0.1);
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  background: linear-gradient(135deg, rgba(32, 178, 170, 0.28), rgba(72, 223, 216, 0.22));
+  box-shadow: 0 8px 24px rgba(72, 223, 216, 0.15);
+  border-color: rgba(72, 223, 216, 0.4);
+}
+
+.btn:active {
+  transform: translateY(0);
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #20b2aa, #48dfd8);
+  color: #0f0f23;
+  border: none;
+  font-weight: 600;
+  box-shadow: 0 8px 20px rgba(72, 223, 216, 0.2);
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #28c9c1, #5ae5dd);
+  box-shadow: 0 12px 32px rgba(72, 223, 216, 0.3);
+}
+
+.btn-secondary {
+  background: linear-gradient(135deg, rgba(212, 175, 55, 0.12), rgba(244, 208, 63, 0.08));
+  border: 1.5px solid rgba(212, 175, 55, 0.3);
+  color: #f8f6f1;
+}
+
+.btn-secondary:hover {
+  background: linear-gradient(135deg, rgba(212, 175, 55, 0.2), rgba(244, 208, 63, 0.15));
+  border-color: rgba(212, 175, 55, 0.5);
+  box-shadow: 0 8px 24px rgba(212, 175, 55, 0.15);
+}
+
+.btn-ghost {
+  background: transparent;
+  border: 1px solid rgba(248, 246, 241, 0.12);
+  box-shadow: none;
+  color: #f8f6f1;
+}
+
+.btn-ghost:hover {
+  background: rgba(248, 246, 241, 0.06);
+  border-color: rgba(248, 246, 241, 0.2);
+}
+
+.badge {
+  background: rgba(72, 223, 216, 0.12);
+  border: 1px solid rgba(72, 223, 216, 0.25);
+  border-radius: 9999px;
+  font-size: 0.7rem;
+  line-height: 1rem;
+  padding: 0.35rem 0.75rem;
+  color: #48dfd8;
+  white-space: nowrap;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+.badge-secondary {
+  background: rgba(212, 175, 55, 0.12);
+  border-color: rgba(212, 175, 55, 0.25);
+  color: #f4d03f;
+}
+
+/* Cosmic aurora with indigo/teal base */
+.aurora {
+  background-image: radial-gradient(1400px 700px at 5% 5%, rgba(72, 223, 216, 0.06), transparent 50%),
+    radial-gradient(1000px 700px at 95% 5%, rgba(212, 175, 55, 0.04), transparent 50%),
+    conic-gradient(
+      from 180deg at 50% 10%,
+      rgba(32, 178, 170, 0.08),
+      rgba(15, 15, 35, 0),
+      rgba(45, 45, 95, 0.06),
+      rgba(15, 15, 35, 0)
+    );
+}
+
+.particle {
+  background: radial-gradient(circle, rgba(248, 246, 241, 0.8) 0, rgba(248, 246, 241, 0) 60%);
+  filter: drop-shadow(0 0 12px rgba(72, 223, 216, 0.3));
+  opacity: 0.6;
+  border-radius: 9999px;
+  animation: twinkle 5s ease-in-out infinite;
+}
+
+.eq span {
+  display: block;
+  width: 3px;
+  border-radius: 1.5px;
+  background: linear-gradient(180deg, #48dfd8, #d4af37);
+  transform-origin: bottom;
+  animation: eqbounce 1.2s ease-in-out infinite;
+}
+
+.eq span:nth-child(2) {
+  animation-delay: 0.15s;
+}
+.eq span:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.eq span:nth-child(4) {
+  animation-delay: 0.45s;
+}
+.eq span:nth-child(5) {
+  animation-delay: 0.6s;
+}
+
+.focus-ring:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(72, 223, 216, 0.25);
+}
+
+.carousel-track {
+  transition: transform 0.6s cubic-bezier(0.2, 0.6, 0.2, 1);
+}
+
+/* Refined animations */
+@keyframes twinkle {
+  0%,
+  100% {
+    opacity: 0.3;
+    transform: translateY(0);
+  }
+  50% {
+    opacity: 0.8;
+    transform: translateY(-2px);
+  }
+}
+
+@keyframes eqbounce {
+  0%,
+  100% {
+    height: 6px;
+  }
+  50% {
+    height: 20px;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Utility animation classes */
+.animate-in {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.animate-slide-in {
+  animation: slideInDown 0.4s ease-out;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* New premium card system */
+.card-premium {
+  @apply p-6 rounded-xl border transition-all duration-300;
+  background: rgba(32, 178, 170, 0.05);
+  border-color: rgba(72, 223, 216, 0.15);
+}
+
+.card-premium:hover {
+  background: rgba(32, 178, 170, 0.08);
+  border-color: rgba(72, 223, 216, 0.3);
+  transform: translateY(-1px);
+}
+
+.dashboard-gradient {
+  background: linear-gradient(135deg, #0f0f23 0%, #1a1a3e 50%, #0f0f23 100%);
+}
+
+/* Section spacing utilities */
+.section-spacing {
+  @apply py-16 sm:py-20 lg:py-24;
+}
+
+.section-container {
+  @apply mx-auto max-w-7xl px-4 sm:px-6 lg:px-8;
+}

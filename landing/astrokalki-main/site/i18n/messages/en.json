@@ -1,0 +1,69 @@
+{
+  "common": {
+    "language": "Language",
+    "english": "English",
+    "spanish": "Español",
+    "hindi": "हिन्दी",
+    "portuguese": "Português",
+    "home": "Home",
+    "services": "Services",
+    "pricing": "Pricing",
+    "booking": "Book",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Your Cosmic Blueprint",
+    "subtitle": "Get personalized karmic insights with actionable guidance. Science meets ancient wisdom.",
+    "cta_primary": "Start Reading",
+    "cta_secondary": "1-on-1 Session"
+  },
+  "stats": {
+    "readings": "Readings",
+    "rating": "Rating",
+    "countries": "Countries"
+  },
+  "pricing": {
+    "title": "Plans aligned to your journey",
+    "subtitle": "Simple tiers. No surprises. Cosmic clarity at every step.",
+    "flash": {
+      "name": "Flash K",
+      "description": "Instant clarity on any question.",
+      "price": "₹100"
+    },
+    "cosmic": {
+      "name": "Cosmic Code",
+      "description": "Reveal your cosmic blueprint.",
+      "price": "₹777"
+    },
+    "karma": {
+      "name": "KARMA Level",
+      "description": "Your personalized karmic insight session.",
+      "price": "₹1,500",
+      "badge": "Most Popular"
+    }
+  },
+  "testimonials": {
+    "title": "Stories from the cosmos",
+    "previous": "Previous",
+    "next": "Next"
+  },
+  "booking": {
+    "title": "Lead & Booking Form",
+    "subtitle": "We reply within 24 hours.",
+    "name": "Full Name",
+    "phone": "Phone",
+    "email": "Email",
+    "dob": "Date of Birth",
+    "location": "Location",
+    "submit": "Submit",
+    "success": "Thank you! Your request is received.",
+    "success_message": "We'll reach out shortly."
+  },
+  "footer": {
+    "rights": "All Rights Reserved",
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "disclaimer": "The cosmos holds infinite possibilities. For entertainment and guidance."
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "common": {
+    "language": "Idioma",
+    "english": "English",
+    "spanish": "Español",
+    "hindi": "हिन्दी",
+    "portuguese": "Português",
+    "home": "Inicio",
+    "services": "Servicios",
+    "pricing": "Precios",
+    "booking": "Reservar",
+    "about": "Acerca de",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "title": "Tu Plano Cósmico",
+    "subtitle": "Obtén información kármica personalizada con orientación práctica. La ciencia se encuentra con la sabiduría antigua.",
+    "cta_primary": "Comenzar Lectura",
+    "cta_secondary": "Sesión 1-a-1"
+  },
+  "stats": {
+    "readings": "Lecturas",
+    "rating": "Calificación",
+    "countries": "Países"
+  },
+  "pricing": {
+    "title": "Planes alineados con tu viaje",
+    "subtitle": "Niveles simples. Sin sorpresas. Claridad cósmica en cada paso.",
+    "flash": {
+      "name": "Flash K",
+      "description": "Claridad instantánea en cualquier pregunta.",
+      "price": "₹100"
+    },
+    "cosmic": {
+      "name": "Código Cósmico",
+      "description": "Revela tu plano cósmico.",
+      "price": "₹777"
+    },
+    "karma": {
+      "name": "Nivel KARMA",
+      "description": "Tu sesión de perspicacia kármica personalizada.",
+      "price": "₹1,500",
+      "badge": "Más Popular"
+    }
+  },
+  "testimonials": {
+    "title": "Historias del cosmos",
+    "previous": "Anterior",
+    "next": "Siguiente"
+  },
+  "booking": {
+    "title": "Formulario de Reserva y Clientes Potenciales",
+    "subtitle": "Respondemos en 24 horas.",
+    "name": "Nombre Completo",
+    "phone": "Teléfono",
+    "email": "Correo Electrónico",
+    "dob": "Fecha de Nacimiento",
+    "location": "Ubicación",
+    "submit": "Enviar",
+    "success": "¡Gracias! Tu solicitud ha sido recibida.",
+    "success_message": "Nos comunicaremos pronto."
+  },
+  "footer": {
+    "rights": "Todos los Derechos Reservados",
+    "privacy": "Privacidad",
+    "terms": "Términos",
+    "disclaimer": "El cosmos tiene infinitas posibilidades. Para entretenimiento y orientación."
+  }
+}

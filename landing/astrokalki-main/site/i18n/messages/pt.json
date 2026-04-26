@@ -1,0 +1,69 @@
+{
+  "common": {
+    "language": "Idioma",
+    "english": "English",
+    "spanish": "Español",
+    "hindi": "हिन्दी",
+    "portuguese": "Português",
+    "home": "Início",
+    "services": "Serviços",
+    "pricing": "Preços",
+    "booking": "Reservar",
+    "about": "Sobre",
+    "contact": "Contato"
+  },
+  "hero": {
+    "title": "Seu Plano Cósmico",
+    "subtitle": "Obtenha insights kármicos personalizados com orientação acionável. A ciência encontra a sabedoria antiga.",
+    "cta_primary": "Iniciar Leitura",
+    "cta_secondary": "Sessão Individual"
+  },
+  "stats": {
+    "readings": "Leituras",
+    "rating": "Classificação",
+    "countries": "Países"
+  },
+  "pricing": {
+    "title": "Planos alinhados com sua jornada",
+    "subtitle": "Tiers simples. Sem surpresas. Clareza cósmica a cada passo.",
+    "flash": {
+      "name": "Flash K",
+      "description": "Clareza instantânea em qualquer pergunta.",
+      "price": "₹100"
+    },
+    "cosmic": {
+      "name": "Código Cósmico",
+      "description": "Revele seu plano cósmico.",
+      "price": "₹777"
+    },
+    "karma": {
+      "name": "Nível KARMA",
+      "description": "Sua sessão de insight kármico personalizada.",
+      "price": "₹1,500",
+      "badge": "Mais Popular"
+    }
+  },
+  "testimonials": {
+    "title": "Histórias do cosmos",
+    "previous": "Anterior",
+    "next": "Próximo"
+  },
+  "booking": {
+    "title": "Formulário de Lead e Reserva",
+    "subtitle": "Respondemos em 24 horas.",
+    "name": "Nome Completo",
+    "phone": "Telefone",
+    "email": "E-mail",
+    "dob": "Data de Nascimento",
+    "location": "Localização",
+    "submit": "Enviar",
+    "success": "Obrigado! Sua solicitação foi recebida.",
+    "success_message": "Entraremos em contato em breve."
+  },
+  "footer": {
+    "rights": "Todos os Direitos Reservados",
+    "privacy": "Privacidade",
+    "terms": "Termos",
+    "disclaimer": "O cosmos tem infinitas possibilidades. Para entretenimento e orientação."
+  }
+}

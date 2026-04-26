@@ -1,0 +1,60 @@
+{
+  "version": 2,
+  "buildCommand": "pnpm build",
+  "installCommand": "rm -f pnpm-lock.yaml && pnpm install --no-frozen-lockfile",
+  "monorepo": true,
+  "monorepoRoot": ".",
+  "functions": {
+    "app/api/**": {
+      "memory": 1024,
+      "maxDuration": 60
+    },
+    "app/api/jobs/**": {
+      "memory": 2048,
+      "maxDuration": 300
+    },
+    "app/api/astrology/**": {
+      "memory": 512,
+      "maxDuration": 30
+    },
+    "app/api/payments/**": {
+      "memory": 1024,
+      "maxDuration": 60
+    },
+    "app/api/consultations/**": {
+      "memory": 512,
+      "maxDuration": 30
+    }
+  },
+  "env": [
+    "NEXT_PUBLIC_SUPABASE_URL",
+    "NEXT_PUBLIC_SUPABASE_ANON_KEY",
+    "SUPABASE_SERVICE_ROLE_KEY",
+    "OPENROUTER_API_KEY",
+    "REDIS_URL",
+    "PAYPAL_CLIENT_ID",
+    "PAYPAL_CLIENT_SECRET",
+    "LIVEKIT_API_KEY",
+    "LIVEKIT_API_SECRET",
+    "LIVEKIT_SERVER_URL",
+    "NEXT_PUBLIC_SITE_URL"
+  ],
+  "redirects": [
+    {
+      "source": "/admin",
+      "destination": "/admin/orders",
+      "permanent": false
+    },
+    {
+      "source": "/consultation",
+      "destination": "/booking",
+      "permanent": false
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/healthz",
+      "destination": "/api/health"
+    }
+  ]
+}

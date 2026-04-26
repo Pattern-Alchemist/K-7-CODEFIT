@@ -1,0 +1,8 @@
+export default function PricingBand(){
+  const tiers = [
+    { title: 'Karmic Snapshot', price: '₹99 / $5', points: ['10‑minute reading','3 friction + 3 leverage','7‑day micro‑plan'], badge:'Starter' },
+    { title: 'KARMA Level', price: '₹1,500', points: ['3 questions deep','25–30 mins call','7‑day follow‑up'], badge:'Most Popular' },
+    { title: 'KARMA RELEASE', price: '₹4,500', points: ['Past‑Present‑Future','Remedy plan','30‑day follow‑up'], badge:'Intensive' },
+  ]
+  return (<section className="py-16"><div className="mx-auto max-w-6xl px-6"><h2 className="text-3xl font-semibold text-center">Choose your path</h2><div className="mt-8 grid md:grid-cols-3 gap-6">{tiers.map((t,i)=>(<div key={i} className="relative rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl p-6 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.15),0_30px_80px_-40px_rgba(86,179,168,0.35)]"><div className="absolute -inset-0.5 rounded-3xl bg-gradient-to-br from-teal-300/10 via-transparent to-fuchsia-400/10 blur-2xl opacity-0 hover:opacity-100 -z-10 transition" /><div className="flex items-start justify-between"><h3 className="text-xl font-semibold">{t.title}</h3><span className="text-[10px] px-2 py-1 rounded-full bg-white/10 border border-white/15 text-teal-200">{t.badge}</span></div><p className="mt-2 text-2xl font-bold text-teal-200">{t.price}</p><ul className="mt-4 space-y-2 text-slate-300 text-sm">{t.points.map((p,idx)=><li key={idx}>• {p}</li>)}</ul><a href="/services#lead" className="mt-6 inline-flex w-full items-center justify-center rounded-xl bg-teal-300 text-black font-medium py-3 hover:brightness-95">Book now</a></div>))}</div></div></section>)
+}

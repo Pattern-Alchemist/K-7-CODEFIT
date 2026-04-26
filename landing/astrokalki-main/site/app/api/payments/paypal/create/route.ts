@@ -1,0 +1,1 @@
+import { NextResponse } from 'next/server'; import { createPayPalOrder } from '@/lib/paypal'; export async function POST(){ const order = await createPayPalOrder(500); return NextResponse.json(order) }
